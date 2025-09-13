@@ -10,19 +10,24 @@
     <h2> Berat Badan di Planet Lain </h2>
     <p>Masukkan berat badanmu di Bumi, lalu pilih planet.</p>
 
-    <input type="number" id="weight" placeholder="Berat Badan Di Bumi(KG)"> 
+    <input type="number" id="weight" placeholder="Berat Badan Di Bumi (KG)"> 
 
-    <select name="Planet" id="Plabet" placeholder="Pilih Planet"> <!--berat bumi default = 1-->
-      <option value="0.38">Mercury</option> <!--berat mercury dan mars 0.38 dari berat di bumi-->
+    <select name="Planet" id="planet"> <!--berat bumi default = 1-->
+      <option value="0.38">Merkurius</option> <!--berat mercury dan mars 0.38 dari berat di bumi-->
       <option value="o,91">Venus</option>
-      <option value="1">Earth</option>
+      <option value="1">Bumi</option>
       <option value="0.38">Mars</option>
       <option value="2.34">Jupiter</option>
       <option value="1.06">Saturnus</option><!--https://bosscha.itb.ac.id/id/publik/astronomi-interaktif/skala-berat-badan/  kak ketemu jadi ambil data kalkulator-->
       <option value="0.92">Uranus</option>
-      <option value="1.12">Neptune</option>
+      <option value="1.12">Neptunus</option>
     </select>
-    
+
+    <button onclick="hitungBerat()">Mulai Menghitung</button>
+
+    <div class="result" id="result"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

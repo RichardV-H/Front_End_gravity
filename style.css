@@ -4,10 +4,15 @@ body {
     background-color: #59c6de;
     text-align: center;
     color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .container {
-    max-width: 400px;
+    min-width: 50%;
+    min-height: 35%;
     margin: auto;
     padding: 40px;
     background: navy;
@@ -24,7 +29,7 @@ button {
 
 button:hover {
     background-color: aquamarine;
-    color: aliceblue;
+    color: black;
     transform: scale(1.2);
     transition: transform 0.3 ease;
     opacity: 1;
@@ -37,4 +42,13 @@ input, button, select {
     border-radius: 8px;
     border: none;
     width: 80%;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
